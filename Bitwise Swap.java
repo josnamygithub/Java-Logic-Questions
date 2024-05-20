@@ -6,9 +6,11 @@ public class Main
 	int a = 10, b = 20;
 
 	  System.out.println ("Before Swap a " + a + " ,  b = " + b);
-	  a = a ^ b;
-	  b = a ^ b;
-	  a = a ^ b;
+	  // a = a ^ b;
+	  // b = a ^ b;
+	  // a = a ^ b;
+	 b  ^= (a ^ b) ;
+         a^ = b  ;
 	  System.out.println ("After Swap a " + a + " , b = " + b);
 
   }
